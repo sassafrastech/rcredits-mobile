@@ -29,6 +29,8 @@
   "signInAs": "Signed in as",
   "signOut": "Sign Out",
   "toSetPreferences": "To set your preferences, please see the main menu.",
+  "transactionSuccessHeading": "Success!",
+  "transactionSuccessNote": "{{amount}} transferred from {{customerName}} to {{company}}.",
   "userLookupFailure": "User lookup failed.",
   "verifyCustomer": "Please verify {{name}}'s photo id matches the image displayed below."
 }
