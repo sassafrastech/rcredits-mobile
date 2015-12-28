@@ -15,6 +15,26 @@ h2, h4, h6 {
   color: $rCreditsGreen;
 }
 
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.75em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.25em;
+}
+
+h5, h6 {
+  font-size: 1em;
+}
+
 @import "popup";
 @import "logo";
 @import "button";
@@ -22,4 +42,3 @@ h2, h4, h6 {
 @import "company_home";
 @import "customer_menu";
 @import "keypad";
-@import "message";

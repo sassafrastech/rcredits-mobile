@@ -14,32 +14,40 @@
 
   <ion-content>
     <div class="rc" sf-resize>
-      <div class="message">
-        <i class="icon ion-checkmark-circled large-icon"
-          ng-show="success">
-        </i>
-        <i class="icon ion-android-alert large-icon"
-          ng-hide="success">
-        </i>
+      <div class="row responsive-sm">
+        <div class="column col-20">
+          <i class="icon ion-checkmark-circled large-icon"
+            ng-show="success">
+          </i>
+          <i class="icon ion-android-alert large-icon"
+            ng-hide="success">
+          </i>
+        </div>
 
-        <h1>
-          {{ heading | translate }}
-        </h1>
+        <div class="column col-80">
+          <h1>
+            {{ heading | translate }}
+          </h1>
 
-        <p>
-          {{ note | translate:transactionInfo }}
-        </p>
+          <p>
+            {{ note | translate:transactionInfo }}
+          </p>
+        </div>
       </div>
 
-      <div class="actions">
-        <button class="button button-block button-positive"
-          ng-hide="success">
-          Retry
-        </button>
-        <button class="button button-block button-positive"
-          ng-click="redirectHome()">
-          {{ 'home' | translate }}
-        </button>
+      <div class="row">
+        <div class="column col-50">
+          <button class="button button-block button-positive"
+            ng-hide="success">
+            Retry
+          </button>
+        </div>
+        <div class="column col-50">
+          <button class="button button-block button-positive"
+            ng-click="redirectHome()">
+            {{ 'home' | translate }}
+          </button>
+        </div>
       </div>
     </div>
   </ion-content>
