@@ -2,14 +2,20 @@
   <ion-content>
     <div class="rc">
 
-      <h1 class="company">{{currentUser.company}}</h1>
+      <div class="row responsive-sm row-center">
+        <div class="column col-50 col-offset-25">
+          <h1 class="company">{{currentUser.company}}</h1>
 
-      <p class="user">
-        {{ 'signInAs' | translate }}<br>
-        {{currentUser.name}}
-      </p>
+          <p class="user">
+            {{ 'signInAs' | translate }}<br>
+            {{currentUser.name}}
+          </p>
+        </div>
 
-      <div class="rc-logo" ng-include="'templates/logo.html'"></div>
+        <div class="column col-25">
+          <div class="rc-logo" ng-include="'templates/logo.html'"></div>
+        </div>
+      </div>
 
       <button ng-click="scanCustomer()"
         class="scan-customer main-action button button-block button-positive " >
